@@ -1,8 +1,7 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# React
+Створено два компоненти: ControlledForm та UncontrolledForm. В першому використано useState для оновлення стану.
+В цьому можна переконатись, якщо вводити текст у нижнє поле. Одразу буде оновлюватись застосунок та відображати
+введений текст у тег <р>. Також в цьому ж компоненті реалізований хук useEffect, який використовує fetch для отримання
+данних з API та оновлюємо дані завдяки setUser. Після чого тренарним оператором перевіряємо, якщо user має дані, то відображає
+їх. Інакше показує користовачу, що данні завантажуються. Компонент UncontrolledForm використовує input та button. При натисканні
+на кнопку цей івент передається у певну функцію і відображає інформацію, яка була введена у input у вигляді alert.
